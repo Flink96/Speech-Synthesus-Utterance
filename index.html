@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="voiceinator">
+
+    <h1> Speech Synthesus Utterance</h1>
+
+    <select id="voices">
+        <option value="">Select a voice</option>
+    </select>
+
+    <label for="">
+        <span> Speed: </span>
+        <input type="range" name="rate" min="0.3" max="3" step="0.1">
+    </label>
+
+    <label for="">
+        <span> Pitch: </span>
+        <input type="range" name="pitch" min="0.3" max="3" step="0.1">
+    </label>
+    <textarea name="text">I love JS</textarea>
+    <div class="btns">
+        <button id="stop">Stop</button>
+        <button id="speak">Speak</button>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
